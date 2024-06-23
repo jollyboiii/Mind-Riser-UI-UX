@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: lightcoral;
+            height: 300px;
+            width: 300px;
+            margin: auto;
+        }
+        .box{
+            background-color: lightblue;
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            transition: all 1s;
+            align-content: center;
+            text-align: center;
+            margin-top: 5%;
+            
+            
+        }
+        .rotate:hover{
+            /* transform: rotate(360deg); */
+            transform: rotateX(360deg);
+            transform: rotateY(90deg);
+            cursor: pointer;
+            animation-iteration-count: infinite;
+            animation-name: spinner;
+        }
+
+        .scale:hover{
+            
+            transform: scale(2);
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+        }
+
+        .skew:hover{
+            transform: skew(3);
+            transform: skewY();
+            transform: skewX();
+        }
+
+        .translate:hover{
+            transform: translate(100px,100px);
+            /* transform: translateY(200px); */
+            /* transform: translateX(200px); */
+        }
+
+        @keyframes spinner {
+            0%{
+                transform: rotate(90deg);
+            }
+            25%{
+                transform: rotate(180deg);
+            }
+            50%{
+                transform: rotate(270deg);
+            }
+            75%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box rotate">rotate</div>
+        <div class="box scale">scale</div>
+        <div class="box skew">skew</div>
+        <div class="box translate">translate</div>
+    </div>
+</body>
+</html>

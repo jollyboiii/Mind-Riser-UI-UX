@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .parent {
+            border: 2px solid black;
+            display: flex;
+            background-color: aquamarine;
+            height: 600px;
+
+            flex-direction: column;
+
+             /* justify => row  */
+            /* align => column  */
+
+            /* justify-content: center; */
+
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: center; */
+
+            /* align-items: center; */
+            /* align-items: start; */
+            /* align-items: end; */
+        }
+        .child {
+            border: 2px solid red;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <ol>
+        <li>Parent Property</li>
+        <li>Children Property</li>
+    </ol>
+
+
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    
+</body>
+</html>
